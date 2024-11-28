@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+    font-size: 10px;
+  }
+:root {
+    --rojo      : Red;
+    --celeste   : Skyblue;
+    --verde     : LightGreen;
+    --blanco    : white;
+    --negro     : Black;
+    --celesearo : dodgerblue;
+    --verdeAmarl: chartreuse;
+    --darkMamenta: darkmagenta;
+    
+}
+h1 , h2 , h3 {
+    font-family: "Bokor", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+.teto2{
+    color: #33ffb8;
+}
+.teto3{
+    color: var(--darkMamenta);
+    background: 10px;
+}
+.teto3:hover{
+    color:var(--celesearo);
+    background-color: var(--verdeAmarl);
+}
+div{
+    flex-direction: row;
+    display: block;
+}
+
+#Prov {
+    color: darkorange;
+    display: block;
+}
+#H{
+    color: blueviolet;
+}
+#H:hover{
+    background-color: crimson;
+}
+.h3{
+    color: coral;
+}
+img{
+    max-width: 100%;
+    height: var(--Height);
+}
+@media (max-width: 1200px) {
+    body {
+      font-size: 1.4rem; 
+    }
+  }
+  
+  @media (max-width: 768px) { 
+    body {
+      font-size: 1.2rem;
+    }
+  
+    .container {
+      flex-direction: column; 
+    }
+  }
+  
+  @media (max-width: 480px) { 
+    h1 {
+      font-size: 1.8rem; 
+    }
+  
+    .card {
+      padding: 1rem;
+    }
+  }

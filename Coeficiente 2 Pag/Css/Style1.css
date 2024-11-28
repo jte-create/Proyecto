@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html, body {
+    height: 100%;
+  }
+
+  html {
+    font-size: 10px; /*Con esto lo hace Xd*/
+  }
+:root {
+    --azul      : Blue;
+    --rojo      : Red;
+    --celeste   : Skyblue;
+    --blanco    : White;
+    --negro     : Black;
+    --Verde     : Green;
+    --amarillo  :yellow;
+    --fuente    : 10px;
+    --padding   : 0.5rem; /*un rem equivale a 10 pixeles */
+    --Width     : 25rem;
+    --height    : 15rem;
+    --Height    : auto;
+
+}
+body{
+    background-image: url(../img/Gif1.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+h1 , h2 , h3 {
+    font-family: "Bokor", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+.Din{
+    color: var(--azul);
+}
+.Texto1{
+    color: var(--amarillo);
+}
+.Texto1:hover{
+    background-color: var(--azul);
+    color: var(--rojo);
+}
+.Arbol{
+    text-transform: none;
+    color: var(--blanco);
+}
+.Arbol:target{
+    background-color: lightblue;
+    border-color: blue; 
+}
+.Din:focus {
+   color: var(--celeste);
+   background-color: var(--rojo);
+  }
+div {
+    flex-direction: column;
+}
+.tx{
+    width: var(--Width);
+    height: var(--height);
+}
+.tx:focus{
+    background-color: chartreuse;
+}
+.h1{
+    display: inline;
+}
+.h2{
+    color: goldenrod;
+}
+.h3{
+    color: goldenrod;
+}
+@media (max-width: 1200px) {
+    div{
+        justify-content: center;
+    }
+  }
+  
+  @media (max-width: 768px) { 
+    .h2 {
+      color: cadetblue;
+    }
+  
+    div {
+      flex-direction: column; 
+    }
+  }
+  
+  @media (max-width: 480px) { 
+    h1 {
+      color: var(--rojo); 
+    }
+  
+    h3 {
+      color: var(--azul);
+      background-color: blueviolet;
+    }
+  }
